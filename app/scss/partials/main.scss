@@ -1,0 +1,202 @@
+body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+   &.ring-central {
+      color: #052049;
+      font-family: 'Oswald', sans-serif;
+
+      .container-fluid {
+         margin: 0;
+         padding: 0;
+      }
+
+      .logo {
+         max-width: 306px;
+      }
+
+      .top {
+         background: url(../images/big-bg.png) no-repeat;
+         padding: 20px 2%;
+
+         @include mq('tablet'){
+            background-size: cover;
+            padding: 40px 70px;
+         }
+      }
+
+      h3 {
+         font-size: 26px;
+         font-weight: 500;
+         color: #052049;
+         line-height: 1.4;
+         letter-spacing: 1.1px;
+         text-transform: uppercase;
+      }
+
+      .bottom {
+         max-width: 1160px;
+         margin: 0 auto;
+         padding-top: 50px;
+
+         p {
+            color: #052049;
+            font-size: 17px;
+            font-family: sans-serif;
+            line-height: 1.4;
+            margin: 24px 0;
+
+            &.link,
+            a  {
+               font-size: #f68b1e;
+               font-size: 24px;
+               color: #f68b1e;
+               margin: 0;
+            }
+         }
+
+         .bg-img {
+            background: url(../images/bg.png) no-repeat;
+            background-position: 50% 0%;
+            min-height: 400px;
+         }
+      }
+
+      .center {
+
+         @include mq('tablet-wide'){
+            float: none;
+            margin: 0 auto;
+         }
+
+         h2 {
+            position: relative;
+            top: 20px;
+            color: #f68b1e;
+            font-size: 23px;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 1.6;
+            letter-spacing: 2px;
+
+            @include mq('tablet'){
+               top: -70px;
+            }
+
+            @include mq('sm-comp'){
+               top: -30px;
+            }
+
+         }
+
+         .btn-default {
+            position: relative;
+            top: 30px;
+            display: block;
+            font-size: 24px;
+            font-weight: 500;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: #f68b1e;
+            border-radius: 3px;
+            margin: 0 auto 50px;
+            max-width: 276px;
+            padding: 18px 90px;
+            transition: all 0.2s linear;
+
+            @include mq('tablet-wide'){
+               top: -20px;
+            }
+
+            @include mq('sm-comp'){
+               top: 0;
+            }
+
+            &:hover {
+               text-decoration: none;
+               background: darken(#f68b1e, 5%);
+            }
+         }
+
+         .need-help {
+            display: inline-block;
+            width: 100%;
+            color: #ffffff;
+            opacity: 1;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 30px;
+
+            @include mq('tablet-wide'){
+               opacity: 0.7;
+               text-decoration: none;
+
+               &:hover {
+                  opacity: 1;
+               }
+            }
+         }
+      }
+
+         .img-container {
+
+            @include mq('tablet-wide'){
+               position: relative;
+               top: -55px;
+            }
+
+            .main-header {
+               display: block;
+               position: absolute;
+               font-size: 30px;
+               top: 50px;
+               left: 50%;
+               letter-spacing: 0.75px;
+               transform: translateX(-50%);
+               text-transform: uppercase;
+
+               @include mq('tablet'){
+                  top: 50px;
+               }
+
+               @include mq('sm-comp'){
+                  top: 150px;
+               }
+
+            }
+
+            img {
+               display: block;
+               margin: 0 auto;
+               width: 100%;
+
+               @include mq('tablet'){
+                  position: relative;
+                  top: -100px;
+               }
+
+               @include mq('tablet-wide'){
+                  top: 0px;
+               }
+            }
+         }
+   }
+
+   h1 {
+        font-size: 35px;
+        width: 100%;
+        font-weight: bold;
+        margin-bottom: 0.9em;
+   }
+
+   #footer {
+      color: #ffffff;
+      font-weight: 400;
+      font-family:sans-serif;
+      background: #cccccc;
+      padding: 30px 11%;
+   }
+}

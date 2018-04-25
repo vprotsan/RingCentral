@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  body.ring-central {
+    color: #052049;
+    font-family: 'Oswald', sans-serif; }
+    body.ring-central .container-fluid {
+      margin: 0;
+      padding: 0; }
+    body.ring-central .logo {
+      max-width: 306px; }
+    body.ring-central .top {
+      background: url(../images/big-bg.png) no-repeat;
+      padding: 20px 2%; }
+      @media only screen and (min-width: 768px) {
+        body.ring-central .top {
+          background-size: cover;
+          padding: 40px 70px; } }
+    body.ring-central h3 {
+      font-size: 26px;
+      font-weight: 500;
+      color: #052049;
+      line-height: 1.4;
+      letter-spacing: 1.1px;
+      text-transform: uppercase; }
+    body.ring-central .bottom {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding-top: 50px; }
+      body.ring-central .bottom p {
+        color: #052049;
+        font-size: 17px;
+        font-family: sans-serif;
+        line-height: 1.4;
+        margin: 24px 0; }
+        body.ring-central .bottom p.link,
+        body.ring-central .bottom p a {
+          font-size: #f68b1e;
+          font-size: 24px;
+          color: #f68b1e;
+          margin: 0; }
+      body.ring-central .bottom .bg-img {
+        background: url(../images/bg.png) no-repeat;
+        background-position: 50% 0%;
+        min-height: 400px; }
+    @media only screen and (min-width: 1024px) {
+      body.ring-central .center {
+        float: none;
+        margin: 0 auto; } }
+    body.ring-central .center h2 {
+      position: relative;
+      top: 20px;
+      color: #f68b1e;
+      font-size: 23px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1.6;
+      letter-spacing: 2px; }
+      @media only screen and (min-width: 768px) {
+        body.ring-central .center h2 {
+          top: -70px; } }
+      @media only screen and (min-width: 1100px) {
+        body.ring-central .center h2 {
+          top: -30px; } }
+    body.ring-central .center .btn-default {
+      position: relative;
+      top: 30px;
+      display: block;
+      font-size: 24px;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: #f68b1e;
+      border-radius: 3px;
+      margin: 0 auto 50px;
+      max-width: 276px;
+      padding: 18px 90px;
+      transition: all 0.2s linear; }
+      @media only screen and (min-width: 1024px) {
+        body.ring-central .center .btn-default {
+          top: -20px; } }
+      @media only screen and (min-width: 1100px) {
+        body.ring-central .center .btn-default {
+          top: 0; } }
+      body.ring-central .center .btn-default:hover {
+        text-decoration: none;
+        background: #f17e0a; }
+    body.ring-central .center .need-help {
+      display: inline-block;
+      width: 100%;
+      color: #ffffff;
+      opacity: 1;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 30px; }
+      @media only screen and (min-width: 1024px) {
+        body.ring-central .center .need-help {
+          opacity: 0.7;
+          text-decoration: none; }
+          body.ring-central .center .need-help:hover {
+            opacity: 1; } }
+    @media only screen and (min-width: 1024px) {
+      body.ring-central .img-container {
+        position: relative;
+        top: -55px; } }
+    body.ring-central .img-container .main-header {
+      display: block;
+      position: absolute;
+      font-size: 30px;
+      top: 50px;
+      left: 50%;
+      letter-spacing: 0.75px;
+      transform: translateX(-50%);
+      text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        body.ring-central .img-container .main-header {
+          top: 50px; } }
+      @media only screen and (min-width: 1100px) {
+        body.ring-central .img-container .main-header {
+          top: 150px; } }
+    body.ring-central .img-container img {
+      display: block;
+      margin: 0 auto;
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        body.ring-central .img-container img {
+          position: relative;
+          top: -100px; } }
+      @media only screen and (min-width: 1024px) {
+        body.ring-central .img-container img {
+          top: 0px; } }
+  body h1 {
+    font-size: 35px;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0.9em; }
+  body #footer {
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    background: #cccccc;
+    padding: 30px 11%; }
