@@ -76,13 +76,45 @@ body {
          float: none;
          margin: 0 auto;
 
+         .collect-email {
+            position: relative;
+            top: 37px;
+            width:100%;
+
+            @include mq("phablet"){
+               margin: 0 auto;
+               width: 60%;
+            }
+
+            @include mq("tablet"){
+               width: 100%;
+            }
+         }
+
          .email-field {
            border: 0;
            border-radius: 6px;
-           font-size: 24px;
-           font-family: sans-serif;
-           padding: 16px 15px;
-           // margin-right: 10px;
+           font-size: 18px;
+           // font-family: sans-serif;
+           font-family: 'Oswald', sans-serif;
+           padding: 12px 15px;
+
+           @include mq('sm-comp'){
+             font-size: 24px;
+           }
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+               color: #052049;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+               color: #052049;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+               color: #052049;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+               color: #052049;
+            }
          }
 
          h2 {
@@ -123,23 +155,41 @@ body {
             // position: relative;
             // // top: 30px;
             // left: 10px;
-            display: block;
-            font-size: 24px;
+            display: inline-block;
+            font-size: 18px;
             font-weight: 500;
             color: #ffffff;
             letter-spacing: 2px;
             text-transform: uppercase;
             background: #f68b1e;
             border-radius: 6px;
-            // margin: 0 auto 50px;
-            max-width: 276px;
-            padding: 18px 0;
+            margin: 10px auto 10px;
+            // max-width: 276px;
+            width: 100%;
+            padding: 18px 10px;
             transition: all 0.2s linear;
 
-            @include mq('sm-comp'){
-               // top: -26px;
+            @include mq("phone-wide"){
+               max-width: 100%;
+               margin: 10px auto 50px;
+            }
+
+            @include mq("tablet"){
                position: relative;
+               margin: 0px auto 50px;
                left: 10px;
+               width: 33.33333333%;
+            }
+
+            @include mq("tablet-wide"){
+               max-width: 100%;
+               padding: 16px 10px;
+            }
+
+            @include mq('sm-comp'){
+               max-width: 276px;
+               font-size: 24px;
+               padding: 18px 10px;
             }
 
             &:hover {
