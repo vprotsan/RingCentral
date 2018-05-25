@@ -215,7 +215,8 @@ body {
         @media only screen and (min-width: 1024px) {
           body.ring-central .center .need-help {
             opacity: 0.7;
-            text-decoration: none; }
+            text-decoration: none;
+            margin-top: 20px; }
             body.ring-central .center .need-help:hover {
               opacity: 1; } }
     @media only screen and (min-width: 1024px) {
